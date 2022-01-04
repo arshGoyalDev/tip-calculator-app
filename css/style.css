@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+:root{
+  /* Primary */
+
+  --strong-cyan: hsl(172, 67%, 45%);
+
+  /* Neutral */
+
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --dark-grayish-cyan-2: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --light-grayish-cyan-2: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Space Mono', monospace;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 40px 0 0 0;
+  background: var(--light-grayish-cyan);
+}
+
+
+/******************** main contianer ********************/
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: var(--white);
+  padding: 25px;
+  margin-top: 40px;
+  border-radius: 20px;}
+
+
+/******************* inputs section *******************/
+/****************** bill amount *********************/
+.bill-label,
+.number-of-people{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--dark-grayish-cyan);
+  padding: 0 3px;
+}
+
+.error{
+  color: rgba(255, 0, 0, 0.7);
+  visibility: hidden;
+}
+.error-input{
+  outline: none !important;
+  border: 3px solid rgba(255, 0, 0, 0.7);
+}
+
+#bill-amount{
+  background-image: url(../images/icon-dollar.svg);
+  background-repeat: no-repeat;
+  background-position: top 17px left 15px;
+  margin-top: 5px;
+}
+
+input{
+  width: 100%;
+  height: 40px;
+  font-size: 24px;
+  padding: 25px 15px;
+  color: var(--very-dark-cyan);
+  font-weight: 900;
+  border: none;
+  background: var(--light-grayish-cyan-2);
+  -moz-appearance: textfield;
+  text-align: end;
+  border-radius: 7px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+}
+input:focus{
+  outline: 3px solid  var(--strong-cyan);
+}
+
+/******************* tips section ********************/
+.tip-container{
+  margin: 40px 0;
+}
+.tip-container h4{
+  color: var(--dark-grayish-cyan);
+}
+.tips{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.tip,
+.tips input{
+  width: 48%;
+  margin: 5px 0;
+  padding: 10px 0;
+  font-size: 22px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 900;
+}
+
+.custom{
+  text-align: center;
+  text-transform: capitalize;
+  height: auto;
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.selected{
+  background: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+  transition: 0.3s;
+}
+.unselected{
+  background: var(--very-dark-cyan);
+  color: var(--white);
+  transition: 0.3s;
+}
+.unselected:hover{
+  color: var(--very-dark-cyan);
+  background: var(--light-grayish-cyan);
+}
+
+/***************** number 0f people *****************/
+#number-of-people{
+  margin-top: 5px;
+  background-image: url(../images/icon-person.svg);
+  background-repeat: no-repeat;
+  background-position: top 17px left 15px;
+}
+
+
+/****************** results section ********************/
+.results{
+  background: var(--very-dark-cyan);
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.tip-amount,
+.total{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tip-amount-headings p:first-child,
+.total-headings p:first-child{
+  color: var(--white);
+  font-size: 14px;
+}
+.tip-amount-headings p:last-child,
+.total-headings p:last-child{
+  color: var(--dark-grayish-cyan-2);
+  font-size: 12px;
+}
+
+.tip-amount p,
+.total p{
+  color: var(--strong-cyan);
+  font-size: 26px;
+  font-weight: 900;
+}
+
+.total{
+  margin-top: 15px;
+}
+
+/**************** resets button *****************/
+.reset-btn{
+  margin-top: 30px;
+  padding: 8px 0;
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--very-dark-cyan);
+  background: var(--strong-cyan);
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.reset-btn:hover{
+  background-color: var(--light-grayish-cyan);
+}
