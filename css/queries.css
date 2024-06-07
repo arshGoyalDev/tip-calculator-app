@@ -1,41 +1,41 @@
 @media (min-width: 1100px) {
-  body{
+  body {
     padding: 0;
   }
-  
-  main{
+
+  main {
     flex-direction: row;
     width: 1000px;
     margin-top: 80px;
     padding: 35px;
   }
-  .input{
+  .input {
     width: 50%;
   }
 
   .tip,
-  .tips input{
+  .tips input {
     width: 30%;
   }
 
-  .results{
+  .results {
     width: 50%;
     height: 390px;
     margin-left: 50px;
     margin-top: 0;
     padding: 40px;
   }
-  
+
   .tip-amount-headings p:first-child,
-  .total-headings p:first-child{
+  .total-headings p:first-child {
     font-size: 16px;
   }
   .tip-amount-headings p:last-child,
-  .total-headings p:last-child{
+  .total-headings p:last-child {
     font-size: 14px;
   }
   .tip-amount p,
-  .total p{
+  .total p {
     font-size: 38px;
   }
 }

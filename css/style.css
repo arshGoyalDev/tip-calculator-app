@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 
-:root{
+:root {
   /* Primary */
 
   --strong-cyan: hsl(172, 67%, 45%);
@@ -15,14 +15,14 @@
   --white: hsl(0, 0%, 100%);
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
 }
 
-body{
+body {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,9 +32,8 @@ body{
   background: var(--light-grayish-cyan);
 }
 
-
 /******************** main container ********************/
-main{
+main {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,13 +41,13 @@ main{
   background: var(--white);
   padding: 25px;
   margin-top: 40px;
-  border-radius: 20px;}
-
+  border-radius: 20px;
+}
 
 /******************* inputs section *******************/
 /****************** bill amount *********************/
 .bill-label,
-.number-of-people{
+.number-of-people {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,23 +55,23 @@ main{
   padding: 0 3px;
 }
 
-.error{
+.error {
   color: rgba(255, 0, 0, 0.7);
   visibility: hidden;
 }
-.error-input{
+.error-input {
   outline: none !important;
   border: 3px solid rgba(255, 0, 0, 0.7);
 }
 
-#bill-amount{
+#bill-amount {
   background-image: url(../images/icon-dollar.svg);
   background-repeat: no-repeat;
   background-position: top 17px left 15px;
   margin-top: 5px;
 }
 
-input{
+input {
   width: 100%;
   height: 40px;
   font-size: 24px;
@@ -86,21 +85,21 @@ input{
   border-radius: 7px;
 }
 input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button{
+input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
-input:focus{
-  outline: 3px solid  var(--strong-cyan);
+input:focus {
+  outline: 3px solid var(--strong-cyan);
 }
 
 /******************* tips section ********************/
-.tip-container{
+.tip-container {
   margin: 40px 0;
 }
-.tip-container h4{
+.tip-container h4 {
   color: var(--dark-grayish-cyan);
 }
-.tips{
+.tips {
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -108,7 +107,7 @@ input:focus{
   margin-top: 10px;
 }
 .tip,
-.tips input{
+.tips input {
   width: 48%;
   margin: 5px 0;
   padding: 10px 0;
@@ -118,7 +117,7 @@ input:focus{
   font-weight: 900;
 }
 
-.custom{
+.custom {
   text-align: center;
   text-transform: capitalize;
   height: auto;
@@ -126,32 +125,31 @@ input:focus{
   cursor: pointer;
   transition: 0.3s;
 }
-.selected{
+.selected {
   background: var(--strong-cyan);
   color: var(--very-dark-cyan);
   transition: 0.3s;
 }
-.unselected{
+.unselected {
   background: var(--very-dark-cyan);
   color: var(--white);
   transition: 0.3s;
 }
-.unselected:hover{
+.unselected:hover {
   color: var(--very-dark-cyan);
   background: var(--light-grayish-cyan);
 }
 
 /***************** number 0f people *****************/
-#number-of-people{
+#number-of-people {
   margin-top: 5px;
   background-image: url(../images/icon-person.svg);
   background-repeat: no-repeat;
   background-position: top 17px left 15px;
 }
 
-
 /****************** results section ********************/
-.results{
+.results {
   background: var(--very-dark-cyan);
   width: 100%;
   padding: 20px;
@@ -163,36 +161,36 @@ input:focus{
 }
 
 .tip-amount,
-.total{
+.total {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .tip-amount-headings p:first-child,
-.total-headings p:first-child{
+.total-headings p:first-child {
   color: var(--white);
   font-size: 14px;
 }
 .tip-amount-headings p:last-child,
-.total-headings p:last-child{
+.total-headings p:last-child {
   color: var(--dark-grayish-cyan-2);
   font-size: 12px;
 }
 
 .tip-amount p,
-.total p{
+.total p {
   color: var(--strong-cyan);
   font-size: 26px;
   font-weight: 900;
 }
 
-.total{
+.total {
   margin-top: 15px;
 }
 
 /**************** resets button *****************/
-.reset-btn{
+.reset-btn {
   margin-top: 30px;
   padding: 8px 0;
   font-size: 18px;
@@ -207,6 +205,6 @@ input:focus{
   opacity: 1;
 }
 
-.reset-btn:hover{
+.reset-btn:hover {
   background-color: var(--light-grayish-cyan);
 }
