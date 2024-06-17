@@ -13,11 +13,6 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Calculate the correct tip and total cost of the bill per person
 
-## Links
-
-- [Solution URL](https://www.frontendmentor.io/solutions/tip-calculator-app-ErIValYKA)
-- [Live Site URL](https://tip-calculator-app-developingweb.vercel.app)
-
 ## Built with
 
 - Semantic HTML5 markup
